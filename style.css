@@ -1,0 +1,92 @@
+html {
+  max-width: 2130px;
+  min-width: 2130px;
+  margin: 0 auto;
+}
+
+p {
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 38.5px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Forum;
+  text-transform: uppercase;
+}
+
+header {
+  background-color: black;
+}
+
+.headerWrapper {
+  padding: 66px 263px 62px 267px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerWrapper div {
+  display: flex;
+}
+
+.headerWrapper div img {
+  width: 54px;
+  height: 29px;
+  margin-right: 29px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul * {
+  margin-right: 60px;
+}
+
+nav ul *:last-child {
+  margin-right: 0;
+}
+
+nav ul {
+  display: flex;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 23px;
+  letter-spacing: 3px;
+  padding-top: 4px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+    text-decoration: none;
+  }
+  
+  a:after {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    content: '';
+    transition: width 0.3s ease-out;
+  }
+  
+  a:hover:after,
+  a:focus:after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  }
+
+h1 {
+  color: #fff;
+  font-family: Forum;
+  font-size: 28px;
+  letter-spacing: 7px;
+  padding-top: 4px;
+}
