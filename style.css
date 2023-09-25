@@ -59,29 +59,29 @@ nav ul {
 }
 
 a {
-    position: relative;
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-    line-height: 1;
-    text-decoration: none;
-  }
-  
-  a:after {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #fff;
-    content: '';
-    transition: width 0.3s ease-out;
-  }
-  
-  a:hover:after,
-  a:focus:after {
-    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
-  }
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  line-height: 1;
+  text-decoration: none;
+}
+
+a:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+
+a:hover:after,
+a:focus:after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
 
 h1 {
   color: #fff;
@@ -89,4 +89,131 @@ h1 {
   font-size: 28px;
   letter-spacing: 7px;
   padding-top: 4px;
+}
+
+/* slider */
+
+.slider {
+  background-color: black;
+  position: relative;
+  height: 903px;
+}
+
+.sliderWrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 263px 60px 267px;
+}
+
+.blacSquare {
+  position: absolute;
+  left: 266px;
+  height: 872px;
+  width: 32%;
+  background-color: rgba(0, 0, 0, 0.66);
+  z-index: 1;
+  box-shadow: 88px -22px 47px rgba(0, 0, 0, 0.66);
+}
+
+.imgWrapper {
+  display: flex;
+  flex-shrink: 0;
+  width: 70%;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.imgWrapper * {
+  display: flex;
+  flex-shrink: 0;
+  height: 835px;
+  margin-right: 10px;
+}
+
+.sliderTitle {
+  color: #fff;
+  font-size: 83px;
+  letter-spacing: 9px;
+  padding-top: 176px;
+  margin-bottom: 32px;
+}
+
+.sliderTitle * {
+  margin-bottom: 6px;
+}
+
+.sliderTitle *:last-child {
+  margin-bottom: 0;
+}
+
+.blacSquare p {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  letter-spacing: 2.7px;
+  margin-bottom: 85px;
+}
+
+.blacSquare button {
+  border-radius: 10px;
+  background: #710707;
+  width: 399px;
+  height: 78px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+.sliderController {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 665px;
+  height: 130px;
+  background-color: black;
+  bottom: 0;
+  padding: 40px 79px;
+}
+
+.sliderController p {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  user-select: none;
+}
+
+.carousel {
+  display: flex;
+  width: 205px;
+}
+
+.arrows {
+  display: flex;
+}
+
+.arrows p {
+  font-size: 34px;
+  margin-right: 21px;
+  margin-top: -9px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrows p:last-child {
+  margin-right: 0;
+}
+
+.carousel div {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  margin-right: 28px;
+}
+
+.carousel div:last-child {
+  margin-right: 0px;
 }
