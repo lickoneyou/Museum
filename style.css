@@ -220,7 +220,7 @@ h1 {
 /* virtualTour */
 
 .virtualTourWrapper {
-  padding: 86px 264px;
+  padding: 86px 264px 0 264px;
 }
 
 .virtualTourWrapper h2 {
@@ -274,4 +274,74 @@ hr {
 .showcase > div p:last-child {
   font-size: 20px;
   margin-top: -2px;
+}
+
+/* pictureExplore */
+
+.pictureExplore {
+  background-color: black;
+}
+
+.pictureExploreWrapper {
+  padding: 90px 266px 83px 266px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discr h2 {
+  color: #fff;
+  font-size: 84px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.discr hr {
+  width: 735px;
+  margin-bottom: 88px;
+}
+
+.discr div {
+  width: 730px;
+}
+
+.discr p {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 38.5px;
+  letter-spacing: 0.2px;
+  margin-bottom: 36px;
+}
+
+.discr p:last-child {
+  margin-bottom: 0;
+}
+
+.discr p > span {
+  color: #caaa7d;
+}
+
+.afterPicWrapper {
+  margin-top: 12px;
+  width: 798px;
+  background-image: url("./assets/img/explore-slider/after.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 778px;
+  overflow: hidden;
+}
+
+.expPicWrapper {
+  width: 400px;
+  overflow: hidden;
+}
+
+.expPicWrapper > img {
+  display: block;
+  width: auto;
+  max-width: 798px;
+  max-height: 778px;
+  min-width: 798px;
+  min-height: 778px;
 }
