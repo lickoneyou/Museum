@@ -80,7 +80,7 @@ a:after {
 
 a:hover:after,
 a:focus:after {
-  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+  width: 100%;
 }
 
 h1 {
@@ -102,7 +102,7 @@ h1 {
 .sliderWrapper {
   display: flex;
   justify-content: flex-end;
-  padding: 0 263px 60px 267px;
+  padding: 0 263px 0 267px;
 }
 
 .blacSquare {
@@ -119,7 +119,6 @@ h1 {
   display: flex;
   flex-shrink: 0;
   width: 70%;
-  height: 1000px;
   overflow: hidden;
 }
 
@@ -216,4 +215,63 @@ h1 {
 
 .carousel div:last-child {
   margin-right: 0px;
+}
+
+/* virtualTour */
+
+.virtualTourWrapper {
+  padding: 86px 264px;
+}
+
+.virtualTourWrapper h2 {
+  color: #9d8665;
+  font-size: 90px;
+  letter-spacing: 5px;
+  margin-bottom: 29px;
+}
+
+hr {
+  background: #710707;
+  height: 3px;
+  margin-bottom: 80px;
+}
+
+.showcase {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.showcase > div {
+  width: 490px;
+  height: 424px;
+  margin-bottom: 130px;
+}
+
+.showcase > div img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.showcase > div h3 {
+  font-size: 35px;
+  letter-spacing: 6px;
+  margin-bottom: 12px;
+}
+
+.showcase > div hr {
+  width: 335px;
+  height: 2px;
+  margin-bottom: 7px;
+}
+
+.showcase > div p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.showcase > div p:last-child {
+  font-size: 20px;
+  margin-top: -2px;
 }
