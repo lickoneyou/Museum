@@ -678,3 +678,138 @@ video {
 .thirdColumn {
   justify-content: flex-end;
 }
+
+/* tickets */
+
+.tickets {
+  padding: 89px 261px 88px 268px;
+}
+
+.tickets h2 {
+  color: #9d8665;
+  font-size: 84px;
+  letter-spacing: 8px;
+  margin-bottom: 32px;
+}
+
+.tickets hr {
+  margin-bottom: 82px;
+}
+
+.tickets > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tickets > div > img {
+  width: 801px;
+}
+
+.buyTicket {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding-left: 69px;
+  padding-right: 4px;
+}
+
+.type > p,
+.amountTitle {
+  color: #000;
+  font-size: 28px;
+  letter-spacing: 1.5px;
+}
+
+.type > p {
+  margin-bottom: 58px;
+}
+
+.amountTitle {
+  text-align: right;
+  margin-bottom: 22px;
+}
+
+.type > div {
+  display: flex;
+}
+
+input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  margin-bottom: 42px;
+  margin-right: 26px;
+  cursor: pointer;
+  border-radius: 100%;
+  -webkit-appearance: none;
+  border: 1px solid black;
+}
+
+input[type="radio"]:checked {
+  background: black;
+}
+
+label {
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 1.38px;
+  margin-top: -4px;
+}
+
+.amount {
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.amountCenter {
+  font-size: 24px;
+  font-weight: 300;
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  border: 3px solid black;
+  width: 164px;
+  height: 55px;
+  padding: 6px 14px;
+  margin-bottom: 10px;
+}
+
+.counter > button {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.counter > p {
+  font-size: 22px;
+}
+
+.secondCounter {
+  margin-bottom: 52px;
+}
+
+.total {
+  font-size: 33px;
+  line-height: normal;
+  letter-spacing: 1.65px;
+  margin-bottom: 67px;
+}
+
+.amount > button {
+  color: #fff;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 22px;
+  font-weight: 300;
+  letter-spacing: 2.4px;
+  border-radius: 2px;
+  background: #000;
+  padding: 13px 46px;
+}
