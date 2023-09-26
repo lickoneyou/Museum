@@ -120,12 +120,15 @@
                     <h2>Picture explore</h2>
                     <hr>
                     <div>
-                    <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.
-                    </p>
-                    <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since the
-                        previous restoration in the 19th century.</p>
-                    <p>The cleaning provoked furious protests, not because the picture had been damaged in any way, but
-                        because it looked different.</p>
+                        <p>Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden
+                            Age.
+                        </p>
+                        <p>It was cleaned in 1984 to remove a <span>"yellow veil"</span> of dust that had gathered since
+                            the
+                            previous restoration in the 19th century.</p>
+                        <p>The cleaning provoked furious protests, not because the picture had been damaged in any way,
+                            but
+                            because it looked different.</p>
                     </div>
                 </div>
                 <div class="afterPicWrapper">
@@ -133,6 +136,78 @@
                         <img src="./assets/img/explore-slider/before.jpg" alt="expPic">
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="videoJourney">
+            <div class="videoJourneyTitle">
+                <h2>Video journey</h2>
+                <p>Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa
+                    or Hammurabi's Code</p>
+            </div>
+            <div class="player">
+                <video class="player__video viewer" src="./assets/video/video0.mp4"
+                    poster="./assets/video/poster0.jpg"></video>
+                <div class="playBtn">
+                    <img src="./assets/img/videoIcons/Frame.png" alt="playBtn">
+                </div>
+                <div class="player__controls player__controls--visible">
+                    <div class="player__controls-holder">
+                        <div class="player__button togglePlayback"><img src="./assets/img/videoIcons/play.png"
+                                class="player__playbackIcon" alt="play/pause"></div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress__filled">
+                            <div class="progressCircle"></div>
+                        </div>
+                    </div>
+                    <img class="mute" src="./assets/img/videoIcons/volume.png" alt="mute">
+                    <input id="myinput" type="range" name="volume" class="player__slider playerVolume" min="0" max="1"
+                        step="0.05" value="0.5">
+                    <div class="fullScreenWrapper">
+                        <img class="toggleFullscreen" src="./assets/img/videoIcons/fullscreen.png">
+                    </div>
+                </div>
+            </div>
+            <div class="videoSliderWrapper">
+                <div style='background-image: url("./assets/video/poster3.jpg")'>
+                    <div class="videoSliderTitle">
+                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                        <p>Exposition - Le Corps et l’Ame. De Dona...</p>
+                    </div>
+                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
+                </div>
+                <div style='background-image: url("./assets/video/poster1.jpg")'>
+                    <div class="videoSliderTitle">
+                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                        <p>Au Louvre ! La Venus de Milo</p>
+                    </div>
+                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
+                </div>
+                <div style='background-image: url("./assets/video/poster2.jpg")'>
+                    <div class="videoSliderTitle">
+                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                        <p>Promenade dans les collections mesop...</p>
+                    </div>
+                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
+                </div>
+                <div style='background-image: url("./assets/video/poster4.jpg")'>
+                    <div class="videoSliderTitle">
+                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
+                </div>
+            </div>
+            <div class="videoSliderController">
+                <div class="videoSliderControllerWrapper">
+                <p>«</p>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <p>»</p>
+            </div>
             </div>
         </section>
     </main>
