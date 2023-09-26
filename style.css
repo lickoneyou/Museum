@@ -524,7 +524,7 @@ video {
 }
 
 .videoJourney {
-  padding: 87px 261px;
+  padding: 87px 261px 73px 261px;
 }
 
 .videoJourneyTitle {
@@ -617,4 +617,64 @@ video {
   width: 15px;
   height: 15px;
   border-radius: 100%;
+}
+
+/* gallery */
+
+.gallery {
+  background-color: black;
+}
+
+.galleryWrapper {
+  padding: 90px 265px;
+  overflow: scroll;
+  height: 2443px;
+}
+
+.galleryWrapper {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.galleryWrapper::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.galleryWrapper h2 {
+  color: #fff;
+  font-size: 82px;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+  margin-bottom: 88px;
+}
+
+.galleriPicWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.galleriPicWrapper img {
+  object-fit: contain;
+  align-self: stretch;
+  width: 505px;
+  margin-bottom: 24px;
+}
+
+.galleriPicWrapper img:last-child {
+  margin-bottom: 0px;
+}
+
+.firstColumn,
+.secondColumn,
+.thirdColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstColumn,
+.thirdColumn {
+  justify-content: flex-end;
 }
