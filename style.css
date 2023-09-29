@@ -103,6 +103,7 @@ h1 {
   display: flex;
   justify-content: flex-end;
   padding: 0 263px 0 267px;
+  overflow: hidden;
 }
 
 .blacSquare {
@@ -119,14 +120,15 @@ h1 {
   display: flex;
   flex-shrink: 0;
   width: 70%;
-  overflow: hidden;
+  position: relative;
+  transition: all 500ms ease;
 }
 
 .imgWrapper * {
   display: flex;
   flex-shrink: 0;
   height: 835px;
-  margin-right: 10px;
+  margin-right: 794px;
 }
 
 .sliderTitle {
@@ -870,9 +872,9 @@ footer {
   background-color: black;
 }
 
-footer hr{
-    margin-bottom: 0;
-  }
+footer hr {
+  margin-bottom: 0;
+}
 
 .footerHeader {
   padding: 84px 270px 64px 240px;
