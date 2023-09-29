@@ -69,7 +69,7 @@ const playBtn = document.querySelector(".playBtn");
 function togglePlay() {
   video.paused ? video.play() : video.pause();
   if (icon.src.includes("pause")) {
-    icon.src = "/assets/img/videoIcons/play.png";
+    icon.src = "./assets/img/videoIcons/play.png";
     playBtn.style.opacity = "1";
   } else {
     icon.src = "./assets/img/videoIcons/pause.png";
@@ -181,7 +181,7 @@ videoSlides.forEach((el) =>
   el.addEventListener("click", function () {
     video.src = this.dataset.src;
     video.poster = this.dataset.url;
-    icon.src = "/assets/img/videoIcons/play.png";
+    icon.src = "./assets/img/videoIcons/play.png";
     progressBar.style.flexBasis = 0;
     playBtn.style.opacity = "1";
   })
