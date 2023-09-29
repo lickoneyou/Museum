@@ -2,6 +2,7 @@ html {
   max-width: 2130px;
   min-width: 2130px;
   margin: 0 auto;
+  scroll-behavior: smooth;
 }
 
 p {
