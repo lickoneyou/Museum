@@ -37,6 +37,21 @@ arrowsArrowLeft.addEventListener("click", function () {
   slider("left");
 });
 
+//
+
+const divisor = document.getElementById("divisor");
+const handle = document.getElementById("handle");
+const inpRange = document.getElementById("inpRange");
+
+function moveDivisor() {
+  handle.style.left = inpRange.value + "%";
+  divisor.style.width = inpRange.value + "%";
+}
+
+window.onload = function () {
+  moveDivisor();
+};
+
 // player
 
 const player = document.querySelector(".player");

@@ -131,11 +131,15 @@
                             because it looked different.</p>
                     </div>
                 </div>
-                <div class="afterPicWrapper">
-                    <div class="expPicWrapper">
-                        <img src="./assets/img/explore-slider/before.jpg" alt="expPic">
+                <div class="container">
+                    <div id="comparison">
+                      <figure>
+                        <div id="handle"></div>
+                        <div id="divisor"></div>
+                      </figure>
+                      <input type="range" min="0" max="100" value="65" id="inpRange" oninput="moveDivisor()">
                     </div>
-                </div>
+                   </div>
             </div>
         </section>
         <section class="videoJourney">
