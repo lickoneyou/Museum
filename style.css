@@ -389,7 +389,7 @@ figure {
   border-radius: 100%;
 }
 
-input[type="range"] {
+#inpRange {
   -webkit-appearance: none;
   -moz-appearance: none;
   position: absolute;
