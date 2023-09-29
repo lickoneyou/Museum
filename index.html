@@ -133,13 +133,13 @@
                 </div>
                 <div class="container">
                     <div id="comparison">
-                      <figure>
-                        <div id="handle"></div>
-                        <div id="divisor"></div>
-                      </figure>
-                      <input type="range" min="0" max="100" value="65" id="inpRange" oninput="moveDivisor()">
+                        <figure>
+                            <div id="handle"></div>
+                            <div id="divisor"></div>
+                        </figure>
+                        <input type="range" min="0" max="100" value="65" id="inpRange" oninput="moveDivisor()">
                     </div>
-                   </div>
+                </div>
             </div>
         </section>
         <section class="videoJourney" id="video">
@@ -172,45 +172,51 @@
                     </div>
                 </div>
             </div>
-            <div class="videoSliderWrapper">
-                <div style='background-image: url("./assets/video/poster3.jpg")'>
-                    <div class="videoSliderTitle">
-                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
-                        <p>Exposition - Le Corps et l’Ame. De Dona...</p>
+            <div style="overflow: hidden;">
+                <div class="videoSliderWrapper">
+                    <div style='background-image: url("./assets/video/poster3.jpg")'
+                        data-src="./assets/video/video3.mp4" data-url="./assets/video/poster3.jpg">
+                        <div class="videoSliderTitle">
+                            <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                            <p>Exposition - Le Corps et l’Ame. De Dona...</p>
+                        </div>
+                        <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
                     </div>
-                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
-                </div>
-                <div style='background-image: url("./assets/video/poster1.jpg")'>
-                    <div class="videoSliderTitle">
-                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
-                        <p>Au Louvre ! La Venus de Milo</p>
+                    <div style='background-image: url("./assets/video/poster1.jpg")'
+                        data-src="./assets/video/video1.mp4" data-url="./assets/video/poster1.jpg">
+                        <div class="videoSliderTitle">
+                            <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                            <p>Au Louvre ! La Venus de Milo</p>
+                        </div>
+                        <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
                     </div>
-                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
-                </div>
-                <div style='background-image: url("./assets/video/poster2.jpg")'>
-                    <div class="videoSliderTitle">
-                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
-                        <p>Promenade dans les collections mesop...</p>
+                    <div style='background-image: url("./assets/video/poster2.jpg")'
+                        data-src="./assets/video/video2.mp4" data-url="./assets/video/poster2.jpg">
+                        <div class="videoSliderTitle">
+                            <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                            <p>Promenade dans les collections mesop...</p>
+                        </div>
+                        <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
                     </div>
-                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
-                </div>
-                <div style='background-image: url("./assets/video/poster4.jpg")'>
-                    <div class="videoSliderTitle">
-                        <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
-                        <p>Lorem ipsum dolor sit amet.</p>
+                    <div style='background-image: url("./assets/video/poster4.jpg")'
+                        data-src="./assets/video/video4.mp4" data-url="./assets/video/poster4.jpg">
+                        <div class="videoSliderTitle">
+                            <img src="./assets/img/welcome-slider/1.jpg" alt="titlePic">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                        </div>
+                        <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
                     </div>
-                    <img src="./assets/img/videoIcons/youtube icon.png" alt="youTube">
                 </div>
             </div>
             <div class="videoSliderController">
                 <div class="videoSliderControllerWrapper">
-                    <p>«</p>
+                    <p class="videoSliderControllerLeft">«</p>
+                    <div style="background-color: #333333;"></div>
                     <div></div>
                     <div></div>
                     <div></div>
                     <div></div>
-                    <div></div>
-                    <p>»</p>
+                    <p class="videoSliderControllerRight">»</p>
                 </div>
             </div>
         </section>

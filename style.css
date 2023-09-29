@@ -609,6 +609,7 @@ video {
   margin-left: 5px;
   overflow: hidden;
   margin-bottom: 31px;
+  transition: all 500ms ease;
 }
 
 .videoSliderWrapper > div {

@@ -171,3 +171,57 @@ document.getElementById("myinput").oninput = function () {
     value +
     "%, white 100%)";
 };
+
+// swap video
+
+const videoSliderWrapper = document.querySelector(".videoSliderWrapper");
+const videoSlides = document.querySelectorAll(".videoSliderWrapper > div");
+
+videoSlides.forEach((el) =>
+  el.addEventListener("click", function () {
+    video.src = this.dataset.src;
+    video.poster = this.dataset.url;
+    icon.src = "/assets/img/videoIcons/play.png";
+    progressBar.style.flexBasis = 0;
+    playBtn.style.opacity = "1";
+  })
+);
+
+const videoSliderControllerLeft = document.querySelector(
+  ".videoSliderControllerLeft"
+);
+const videoSliderControllerRight = document.querySelector(
+  ".videoSliderControllerRight"
+);
+const videoSliderCarousel = document.querySelectorAll(
+  ".videoSliderControllerWrapper > div"
+);
+
+function videoSlider() {
+  let out = 0;
+  return (dir) => {
+    if (dir == "right" && out == 0) {
+      out++;
+      videoSliderWrapper.style.marginLeft = "-540px";
+      videoSliderCarousel[0].style.backgroundColor = "#999999";
+      videoSliderCarousel[
+        videoSliderCarousel.length - 1
+      ].style.backgroundColor = "#333333";
+    } else if (dir == "left" && out == 1) {
+      out--;
+      videoSliderWrapper.style.marginLeft = "5px";
+      videoSliderCarousel[0].style.backgroundColor = "#333333";
+      videoSliderCarousel[videoSliderCarousel.length - 1].style.backgroundColor = "#999999";
+    }
+  };
+}
+
+const myVideoSlider = videoSlider();
+
+videoSliderControllerLeft.addEventListener("click", function () {
+  myVideoSlider("left");
+});
+
+videoSliderControllerRight.addEventListener("click", function () {
+  myVideoSlider("right");
+});
