@@ -814,6 +814,8 @@ label {
   padding: 13px 46px;
 }
 
+/* parallax */
+
 .parallax {
   background-image: url("./assets/img/parallax.jpg");
   height: 444px;
@@ -822,3 +824,42 @@ label {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* contacts */
+
+.contacts {
+  padding: 76px 263px;
+}
+
+.contacts h2 {
+  color: #9d8665;
+  font-size: 86px;
+  letter-spacing: 8px;
+  margin-bottom: 30px;
+}
+
+.contactsWrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactsWrapper h3 {
+  font-size: 35px;
+  width: 265px;
+  font-weight: 500;
+  letter-spacing: 0.7px;
+  text-transform: none;
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-bottom: 50px;
+}
+
+.contactsWrapper p {
+  font-size: 22px;
+  letter-spacing: 1.2px;
+  margin-bottom: 18px;
+}
+
+.contactsWrapper p:last-child {
+    margin-bottom: 0;
+  }
