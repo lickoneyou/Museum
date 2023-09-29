@@ -58,7 +58,7 @@ nav ul {
   padding-top: 4px;
 }
 
-a {
+li > a {
   position: relative;
   text-decoration: none;
   color: #fff;
@@ -67,7 +67,7 @@ a {
   text-decoration: none;
 }
 
-a:after {
+li > a:after {
   display: block;
   position: absolute;
   left: 0;
@@ -78,8 +78,8 @@ a:after {
   transition: width 0.3s ease-out;
 }
 
-a:hover:after,
-a:focus:after {
+li > a:hover:after,
+li > a:focus:after {
   width: 100%;
 }
 
@@ -861,5 +861,79 @@ label {
 }
 
 .contactsWrapper p:last-child {
+  margin-bottom: 0;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+}
+
+footer hr{
     margin-bottom: 0;
   }
+
+.footerHeader {
+  padding: 84px 270px 64px 240px;
+  display: flex;
+  justify-content: space-between;
+  height: 304px;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: flex-start;
+  padding: 18px 30px;
+}
+
+.footerLogo > img {
+  margin-right: 32px;
+}
+
+.footerNav > ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 168px;
+  margin-top: 23px;
+}
+
+.footerNav > ul > li {
+  display: flex;
+  flex-direction: column;
+  height: 54px;
+  margin-right: 187px;
+}
+
+.social {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 133px;
+}
+
+.social > a {
+  margin-right: 33px;
+  transition: all 500ms ease;
+}
+
+.social > a:hover {
+  transform: scale(1.3);
+}
+
+.social > a:last-child {
+  margin-right: 0;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 268px;
+}
+
+.signature p {
+  color: #fff;
+  font-size: 22px;
+  letter-spacing: 4px;
+}
