@@ -682,7 +682,7 @@ video {
 /* tickets */
 
 .tickets {
-  padding: 89px 261px 88px 268px;
+  padding: 89px 261px 83px 268px;
 }
 
 .tickets h2 {
@@ -812,4 +812,13 @@ label {
   border-radius: 2px;
   background: #000;
   padding: 13px 46px;
+}
+
+.parallax {
+  background-image: url("./assets/img/parallax.jpg");
+  height: 444px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
