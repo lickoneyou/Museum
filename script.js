@@ -211,7 +211,9 @@ function videoSlider() {
       out--;
       videoSliderWrapper.style.marginLeft = "5px";
       videoSliderCarousel[0].style.backgroundColor = "#333333";
-      videoSliderCarousel[videoSliderCarousel.length - 1].style.backgroundColor = "#999999";
+      videoSliderCarousel[
+        videoSliderCarousel.length - 1
+      ].style.backgroundColor = "#999999";
     }
   };
 }
@@ -225,3 +227,52 @@ videoSliderControllerLeft.addEventListener("click", function () {
 videoSliderControllerRight.addEventListener("click", function () {
   myVideoSlider("right");
 });
+
+// buy tickets
+
+const minusFirst = document.querySelector(".firstCounter > .minus");
+const plusFirst = document.querySelector(".firstCounter > .plus");
+const out1 = document.querySelector(".firstCounter > p");
+
+const minusSecond = document.querySelector(".secondCounter > .minus");
+const plusSecond = document.querySelector(".secondCounter > .plus");
+const out2 = document.querySelector(".secondCounter > p");
+const totalOut = document.querySelector(".total > b");
+
+(function name() {
+  let total = 0;
+
+  function numberOfTickets() {
+    let count = 0;
+    return (dir, value, out) => {
+      if (dir == "plus") {
+        count++;
+        total += value;
+      } else if (dir == "minus" && count > 0) {
+        count--;
+        total -= value;
+      }
+      out.innerText = count;
+      totalOut.innerText = `Total €${total}`;
+    };
+  }
+
+  const myCounter1 = numberOfTickets();
+  const myCounter2 = numberOfTickets();
+
+  minusFirst.addEventListener("click", function () {
+    myCounter1("minus", 100, out1);
+  });
+
+  plusFirst.addEventListener("click", function () {
+    myCounter1("plus", 100, out1);
+  });
+
+  minusSecond.addEventListener("click", function () {
+    myCounter2("minus", 200, out2);
+  });
+
+  plusSecond.addEventListener("click", function () {
+    myCounter2("plus", 200, out2);
+  });
+})();
